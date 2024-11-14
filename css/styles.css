@@ -29,10 +29,11 @@ header .logo h1 {
     font-weight: bold;
     margin: 0;
     color: #FFFFFF;
+    display: inline-block;
 }
 
 header .logo img {
-    display: block;
+    display: inline-block;
     margin-top: 0.5rem;
     max-width: 80px;
     height: auto;
@@ -86,6 +87,11 @@ header nav ul li a:hover {
     transition: background-color 0.3s ease;
 }
 
+.order-button a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .order-button:hover {
     background-color: #FFD54F;
 }
@@ -117,6 +123,7 @@ header nav ul li a:hover {
     overflow: hidden;
     width: 30%;
     max-width: 250px;
+    max-height: 30vw;
     margin: 1rem auto;
     text-align: center;
     transition: transform 0.3s ease;
@@ -127,9 +134,12 @@ header nav ul li a:hover {
 }
 
 .menu-item img {
+    width: auto;
+    min-width: 100%;
     width: 100%;
-    height: auto;
     border-bottom: 4px solid #D32F2F;
+    max-height: 45%;
+    min-height: 30%;
 }
 
 .price {
@@ -232,17 +242,27 @@ cite {
     border-radius: 10px;
 }
 
+.address {
+    text-align: center;
+}
+
 .faq-list {
     list-style: none;
     padding: 0;
     max-width: 600px;
     margin: 0 auto;
+    text-align: center;
 }
 
 .faq-list li {
     margin: 1rem 0;
     color: #6A1B9A;
     font-weight: bold;
+}
+
+.faq-list strong{
+    display: block;
+    margin-bottom: 10px;
 }
 
 /* Footer */
@@ -282,5 +302,88 @@ footer p {
     header nav ul li {
         margin-left: 0;
         margin-bottom: 1rem;
+    }
+}
+
+/* Estilos para el formulario de pedidos */
+.order-section {
+    padding: 2rem;
+    background: linear-gradient(to bottom right, #ffe0b2, #ffcc80);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin: 2rem auto; /* Centra el formulario */
+}
+
+.order-section h3 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #D32F2F;
+    margin-bottom: 1.5rem;
+}
+
+.order-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.order-section label {
+    font-weight: bold;
+    color: #333;
+    font-size: 1rem;
+}
+
+.order-section input[type="text"],
+.order-section input[type="number"],
+.order-section textarea,
+.order-section select {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.order-section input[type="text"]:focus,
+.order-section input[type="number"]:focus,
+.order-section textarea:focus,
+.order-section select:focus {
+    border-color: #D32F2F;
+    outline: none;
+}
+
+.order-section textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.order-section button[type="submit"] {
+    background-color: #4CAF50;
+    color: #FFFFFF;
+    padding: 0.75rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.order-section button[type="submit"]:hover {
+    background-color: #388E3C;
+}
+
+/* Añadir separación entre elementos en la pantalla pequeña */
+@media (max-width: 768px) {
+    .order-section {
+        padding: 1.5rem;
+    }
+
+    .order-section h3 {
+        font-size: 1.5rem;
     }
 }
