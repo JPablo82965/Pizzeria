@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tu Pizza Favorita</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <!-- Header con el logo y el menú de navegación -->
@@ -15,7 +15,8 @@
         <nav>
             <ul>
                 <li><a href="#">Inicio</a></li>
-                <li><a href="#menu">Menú</a></li>
+                <li><a href="#menu">Menú de Pizzas</a></li>
+                <li><a href="#order">Haz tu pedido</a></li>
                 <li><a href="#about">Sobre Nosotros</a></li>
                 <li><a href="#reviews">Reseñas</a></li>
                 <li><a href="#contact">Contacto</a></li>
@@ -51,9 +52,82 @@
                 <h4>Pizza Vegetariana</h4>
                 <p>Pimientos, champiñones, cebolla, aceitunas</p>
                 <p class="price">$13.00</p>
+            </article><article class="menu-item">
+                <img src="images/pizza4.jpg" alt="Pizza Cuatro Quesos">
+                <h4>Pizza Cuatro Quesos</h4>
+                <p>Queso mozzarella, queso azul, parmesano, queso de cabra</p>
+                <p class="price">$15.00</p>
             </article>
+            <article class="menu-item">
+                <img src="images/pizza5.jpg" alt="Pizza Hawaiana">
+                <h4>Pizza Hawaiana</h4>
+                <p>Jamón, piña, queso mozzarella</p>
+                <p class="price">$13.50</p>
+            </article>
+            <article class="menu-item">
+                <img src="images/pizza6.jpg" alt="Pizza BBQ Chicken">
+                <h4>Pizza BBQ Chicken</h4>
+                <p>Pollo, salsa BBQ, cebolla, queso cheddar</p>
+                <p class="price">$14.50</p>
+            </article>
+            <article class="menu-item">
+                <img src="images/pizza7.jpg" alt="Pizza Mexicana">
+                <h4>Pizza Mexicana</h4>
+                <p>Carne molida, jalapeños, pimientos, queso cheddar</p>
+                <p class="price">$14.00</p>
+            </article>
+            <article class="menu-item">
+                <img src="images/pizza8.jpg" alt="Pizza Marinera">
+                <h4>Pizza Marinera</h4>
+                <p>Camarones, mejillones, calamares, queso mozzarella</p>
+                <p class="price">$16.00</p>
+            </article>
+            <article class="menu-item">
+                <img src="images/pizza9.jpg" alt="Pizza de Prosciutto y Rúcula">
+                <h4>Pizza Prosciutto y Rúcula</h4>
+                <p>Prosciutto, rúcula fresca, queso parmesano</p>
+                <p class="price">$15.50</p>
+            </article>            
         </div>
     </section>
+
+    <!-- Sección para Hacer un Pedido -->
+    <section id="order" class="order-section">
+        <h3>Realiza Tu Pedido</h3>
+        <form>
+            <label for="pizza-type">Selecciona tu Pizza:</label>
+            <select id="pizza-type" name="pizza-type">
+                <option value="margherita">Pizza Margherita</option>
+                <option value="pepperoni">Pizza Pepperoni</option>
+                <option value="vegetariana">Pizza Vegetariana</option>
+                <option value="cuatro-quesos">Pizza Cuatro Quesos</option>
+                <option value="hawaiana">Pizza Hawaiana</option>
+                <option value="bbq-chicken">Pizza BBQ Chicken</option>
+                <option value="mexicana">Pizza Mexicana</option>
+                <option value="marinera">Pizza Marinera</option>
+                <option value="prosciutto">Pizza Prosciutto y Rúcula</option>
+            </select>
+
+            <label for="size">Tamaño:</label>
+            <select id="size" name="size">
+                <option value="personal">Personal</option>
+                <option value="mediana">Mediana</option>
+                <option value="grande">Grande</option>
+            </select>
+
+            <label for="extras">Ingredientes Extra:</label>
+            <input type="text" id="extras" name="extras" placeholder="Ej: Pepperoni, queso extra">
+
+            <label for="quantity">Cantidad:</label>
+            <input type="number" id="quantity" name="quantity" min="1" value="1">
+
+            <label for="address">Dirección de Entrega:</label>
+            <textarea id="address" name="address" required></textarea>
+
+            <button type="submit">Enviar Pedido</button>
+        </form>
+    </section>
+
 
     <!-- Sección de Reseñas de Clientes -->
     <section id="reviews" class="reviews-section">
