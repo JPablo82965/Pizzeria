@@ -1,0 +1,176 @@
+/* General */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #FFFFFF;
+    color: #333333;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #D32F2F;
+    color: #FFFFFF;
+}
+
+header .logo h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin-left: 1.5rem;
+}
+
+header nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('images/pizza-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 3rem 1rem;
+    color: #FFFFFF;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.order-button {
+    background-color: #4CAF50;
+    color: #FFFFFF;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.order-button:hover {
+    background-color: #388E3C;
+}
+
+/* Menu Section */
+.menu-section {
+    padding: 2rem;
+    text-align: center;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.menu-item {
+    width: 30%;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.menu-item img {
+    width: 100%;
+    height: auto;
+}
+
+.price {
+    font-weight: bold;
+    color: #D32F2F;
+}
+
+/* Reviews Section */
+.reviews-section {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    text-align: center;
+}
+
+blockquote {
+    margin: 1rem;
+    font-style: italic;
+    color: #555;
+}
+
+cite {
+    display: block;
+    margin-top: 0.5rem;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 2rem;
+    background-color: #f2f2f2;
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contact-section label {
+    margin: 0.5rem 0 0.2rem;
+}
+
+.contact-section input,
+.contact-section textarea {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+}
+
+.contact-section button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 0.75rem;
+    cursor: pointer;
+}
+
+/* Map & FAQ Section */
+.map-faq-section {
+    padding: 2rem;
+    background-color: #fff3e0;
+}
+
+.map img {
+    width: 100%;
+    max-width: 300px;
+    margin: 1rem 0;
+}
+
+.faq-list {
+    list-style: none;
+    padding: 0;
+}
+
+.faq-list li {
+    margin: 1rem 0;
+}
+
+/* Footer */
+footer {
+    background-color: #333333;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+}

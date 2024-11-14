@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Pizza Favorita</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header con el logo y el menú de navegación -->
+    <header>
+        <div class="logo">
+            <h1>TuPizzaFavorita</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#menu">Menú</a></li>
+                <li><a href="#about">Sobre Nosotros</a></li>
+                <li><a href="#reviews">Reseñas</a></li>
+                <li><a href="#contact">Contacto</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección Principal (Hero) -->
+    <section class="hero">
+        <h2>El sabor auténtico de la pizza, directo a tu puerta</h2>
+        <button class="order-button">Ordenar Ahora</button>
+    </section>
+
+    <!-- Sección de Menú Destacado -->
+    <section id="menu" class="menu-section">
+        <h3>Menú Destacado</h3>
+        <div class="menu-items">
+            <article class="menu-item">
+                <img src="images/pizza1.jpg" alt="Pizza Margherita">
+                <h4>Pizza Margherita</h4>
+                <p>Tomate, mozzarella, albahaca fresca</p>
+                <p class="price">$12.00</p>
+            </article>
+            <article class="menu-item">
+                <img src="images/pizza2.jpg" alt="Pizza Pepperoni">
+                <h4>Pizza Pepperoni</h4>
+                <p>Pepperoni, mozzarella, salsa de tomate</p>
+                <p class="price">$14.00</p>
+            </article>
+            <article class="menu-item">
+                <img src="images/pizza3.jpg" alt="Pizza Vegetariana">
+                <h4>Pizza Vegetariana</h4>
+                <p>Pimientos, champiñones, cebolla, aceitunas</p>
+                <p class="price">$13.00</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Sección de Reseñas de Clientes -->
+    <section id="reviews" class="reviews-section">
+        <h3>Lo Que Dicen Nuestros Clientes</h3>
+        <blockquote>
+            <p>"¡La mejor pizza de la ciudad! El sabor es increíble y la entrega fue rápida y eficiente."</p>
+            <cite>- Juan P.</cite>
+        </blockquote>
+        <blockquote>
+            <p>"Me encanta la pizza vegetariana, los ingredientes son frescos y el servicio excelente."</p>
+            <cite>- Ana G.</cite>
+        </blockquote>
+        <blockquote>
+            <p>"Buen precio, buena calidad, ¡sin duda volveré a pedir!"</p>
+            <cite>- Carlos R.</cite>
+        </blockquote>
+    </section>
+
+    <!-- Formulario de Contacto Rápido -->
+    <section id="contact" class="contact-section">
+        <h3>Contáctanos</h3>
+        <form>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Mapa y FAQ -->
+    <section id="faq" class="map-faq-section">
+        <h3>¿Dónde Estamos?</h3>
+        <div class="map">
+            <img src="images/map-placeholder.jpg" alt="Mapa de ubicación">
+            <address>Calle Principal 123, Ciudad</address>
+        </div>
+        <h3>Preguntas Frecuentes</h3>
+        <ul class="faq-list">
+            <li><strong>¿Hacen entregas a domicilio?</strong> Sí, ofrecemos servicio de entrega en toda la ciudad.</li>
+            <li><strong>¿Cuánto tiempo tarda el pedido?</strong> El tiempo promedio de entrega es de 30-45 minutos.</li>
+            <li><strong>¿Qué métodos de pago aceptan?</strong> Aceptamos efectivo y tarjetas de crédito/débito.</li>
+        </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 TuPizzaFavorita. Todos los derechos reservados.</p>
+        <p>Horario: Lun-Dom 10:00 am - 11:00 pm</p>
+    </footer>
+
+</body>
+</html>
