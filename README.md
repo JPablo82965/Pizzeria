@@ -2,7 +2,7 @@
 
 ## Descripción
 
-Este proyecto es una página web para una tienda en línea de alimentos (como pizzas) creada con HTML y CSS. La página incluye una sección de preguntas frecuentes (FAQ), reseñas de clientes, un mapa de ubicación, un formulario para dejar reseñas, y otro para realizar pedidos. El sitio no utiliza JavaScript y está diseñado para ser fácil de mantener y desplegar usando GitHub Pages.
+Este proyecto es una página web para una pizzería creada con HTML y CSS. La página incluye una sección de preguntas frecuentes (FAQ), reseñas de clientes, un mapa de ubicación, un formulario para dejar reseñas, y otro para realizar pedidos.
 
 ## Características
 
@@ -38,4 +38,4 @@ Este proyecto se despliega fácilmente en GitHub Pages. Sigue los pasos a contin
 Clona este repositorio en tu máquina local:
 
 ```bash
-git clone https://github.com/tu-usuario/tu-repositorio.git
+git clone https://github.com/jpablo82965/pizzeria.git
